@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="id01">
+<button onclick= "work()">click me</button>
+</div>
+<script>
+
+function getJSON(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status == 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status);
+      }
+    };
+    xhr.send();
+};
+
+function work(){
+
+getJSON('https://api.myjson.com/bins/14y1pl',
+function(err, data) {
+  if (err != null) {
+    alert('Something went wrong: ' + err);
+  } else {
+  	//var jsonData = JSON.parse(data);
+    var ts_array = [];
+    var con_day = [];
+    var con_month = [];
+    var json = [];
+    for(var i =0; i < data.length ; i++){
+    	var date = data[i].ts;
+ 
+        newDate=date.split("/");
+		var ts=newDate[1]+","+newDate[0]+","+newDate[2];
+		
+        ts_array[i] = new Date(ts).getTime();
+        //console.log("Date" +  data[i].ts + ", TimeStamp " +ts_array[i]);
+        var data2 = {
+			"ts": ts_array[i],
+            "values":{
+            	"consumption_day": data[i].values.consumption_day,
+                "max_demand_day" : data[i].values.max_demand_day,
+                "max_demand_month" : data[i].values.max_demand_month,
+                "consumption_month" : data[i].values.consumption_month
+            }
+		}
+        json.push(data2);
+    }
+    console.log(JSON.stringify(json));
+    alert('Your query count: ' + data.length);
+  }
+  
+});
+	
+}
+</script>
+
+</body>
+</html>
