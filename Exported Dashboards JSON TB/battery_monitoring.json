@@ -1,0 +1,649 @@
+{
+  "title": "Battery Monitoring",
+  "configuration": {
+    "widgets": {
+      "61a1fca0-2628-a568-6acd-01b3fa5f537d": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "horizontal_bar_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "soc",
+                  "type": "timeseries",
+                  "label": "Current",
+                  "color": "#8cd42c",
+                  "settings": {},
+                  "_hash": 0.3811436431679007
+                }
+              ],
+              "entityAliasId": "bc1588be-9345-fbf9-4b19-618fa60184a3"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "maxValue": 100,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#999999"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 18,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#666666"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 0,
+            "gaugeColor": "#eeeeee",
+            "showTitle": true,
+            "gaugeType": "horizontalBar",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear"
+          },
+          "title": "Battery Status",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#8CD42C",
+            "text-align": "center"
+          },
+          "units": "%",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 0,
+        "col": 0,
+        "id": "61a1fca0-2628-a568-6acd-01b3fa5f537d"
+      },
+      "d8652b62-b31d-44c7-3e14-8ae0333c5a2f": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "simple_gauge_justgage",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "cycles_day",
+                  "type": "timeseries",
+                  "label": "Avg",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.17441507572427217
+                }
+              ],
+              "entityAliasId": "bc1588be-9345-fbf9-4b19-618fa60184a3"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "maxValue": 2.2,
+            "minValue": 0.6,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 17,
+              "style": "normal",
+              "weight": "500"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 32,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Segment7Standard",
+              "size": 12,
+              "style": "normal",
+              "weight": "500"
+            },
+            "dashThickness": 0,
+            "gaugeColor": "#e1f5fe",
+            "gaugeType": "donut",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "cycle",
+            "showTitle": false,
+            "neonGlowBrightness": 0,
+            "roundedLineCap": true,
+            "gaugeWidthScale": 1
+          },
+          "title": "Cycles per day",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#2196f3"
+          },
+          "decimals": 1,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 3,
+        "col": 0,
+        "id": "d8652b62-b31d-44c7-3e14-8ae0333c5a2f"
+      },
+      "ee5042c3-6f0c-0e06-e48e-3ce3c2ec564e": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "no_cycles",
+                  "type": "timeseries",
+                  "label": "-",
+                  "color": "#ffa726",
+                  "settings": {},
+                  "_hash": 0.9632472589017937
+                }
+              ],
+              "entityAliasId": "bc1588be-9345-fbf9-4b19-618fa60184a3"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "hsla(199, 92%, 85%, 0.94)",
+          "color": "rgb(69, 90, 100)",
+          "padding": "12px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "Number of Cycles",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 400
+          },
+          "units": "",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false
+        },
+        "row": 7,
+        "col": 0,
+        "id": "ee5042c3-6f0c-0e06-e48e-3ce3c2ec564e"
+      },
+      "bfbb22ef-d6ad-91a7-2437-de8a25e78a33": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "Timeseries - Flot",
+        "sizeX": 11,
+        "sizeY": 7,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "bc1588be-9345-fbf9-4b19-618fa60184a3",
+              "dataKeys": [
+                {
+                  "name": "soc_int",
+                  "type": "timeseries",
+                  "label": "SOC",
+                  "color": "#8cd42c",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisTickDecimals": 0,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7246586374180477
+                },
+                {
+                  "name": "demand",
+                  "type": "timeseries",
+                  "label": "Demand",
+                  "color": "#2196f3",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisTickDecimals": 0,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.35882522508592163
+                }
+              ]
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "pv",
+                  "type": "timeseries",
+                  "label": "Average PV Generation",
+                  "color": "#f44336",
+                  "settings": {
+                    "showLines": true,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisTickDecimals": 0,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.47920119867752886
+                }
+              ],
+              "entityAliasId": "4e7e38c8-8f64-6ca0-17a7-2596f30d5830"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 7,
+            "fontColor": "#545454",
+            "fontSize": 12,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Time of day"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": true,
+            "smoothLines": true
+          },
+          "title": "Battery State of Charge",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600
+          },
+          "mobileHeight": null,
+          "widgetStyle": {},
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "actions": {},
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": true,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": false
+          }
+        },
+        "id": "bfbb22ef-d6ad-91a7-2437-de8a25e78a33"
+      },
+      "a344bb09-0db6-478d-026a-908cb5d3031b": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "#455a64",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: normal;\n    font-size: 22px;\n    color: #455a64;\n    width: 100%;\n    height: 100%;\n    overflow-y:scroll;\n}\n\n.notification_div{\n\tfloat:left;\n    border-bottom:1px solid #b0bec5;\n    height:45px;\n    display: flex;\n    align-items: center;\n    font-size: 16px;\n    padding-bottom: 10px;\n}\n\n.text{\n\tborder-right:1px dashed #b0bec5;\n\twidth:70%;\n    justify-content: left;\n    padding-left:20px\n}\n\n.icon{\n\twidth:20%;\n    justify-content: center;\n}",
+            "cardHtml": "<div class='card'>\r\n  \r\n<div class=\"1\">\r\n<div class=\"notification_div text\">Battery Health check complete</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"2\">\r\n<div class=\"notification_div text\">Maximum DOD reached: 80%</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"3\">\r\n<div class=\"notification_div text\">Battery is runing at optimum effecinecy </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"4\">\r\n<div class=\"notification_div text\">Cell stack resistance is high: manual check required   </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/0KZduYz.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"5\">\r\n<div class=\"notification_div text\">Cell stack tempriture: 21 DEGREES</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/SII1f0G.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"6\">\r\n<div class=\"notification_div text\">BMS regestered 6 minor alerts and 0 major alerts this month </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"7\">\r\n<div class=\"notification_div text\">Battery is aging slower than expected</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"8\">\r\n<div class=\"notification_div text\">Battery fully charged </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"9\">\r\n<div class=\"notification_div text\">Battery is operating at subprime C-Rate </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/SII1f0G.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"10\">\r\n<div class=\"notification_div text\">Ventilation system maintanence check is overdue  </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/0KZduYz.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n    \r\n</div>"
+          },
+          "title": "Notifications",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 7,
+        "col": 8,
+        "id": "a344bb09-0db6-478d-026a-908cb5d3031b"
+      },
+      "1ac6f0dd-a5ff-2c12-b29b-0402ca4279d2": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "efficiency",
+                  "type": "timeseries",
+                  "label": "(last 10 cycles)",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7302293554784127
+                }
+              ],
+              "entityAliasId": "bc1588be-9345-fbf9-4b19-618fa60184a3"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgb(69, 90, 100)",
+          "padding": "12px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "Efficiency",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 400
+          },
+          "units": "%",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "1ac6f0dd-a5ff-2c12-b29b-0402ca4279d2"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 17,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "timewindow": {
+      "realtime": {
+        "interval": 60000,
+        "timewindowMs": 18000000
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Battery Monitoring",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "61a1fca0-2628-a568-6acd-01b3fa5f537d": {
+                "sizeX": 7,
+                "sizeY": 4,
+                "row": 0,
+                "col": 6
+              },
+              "d8652b62-b31d-44c7-3e14-8ae0333c5a2f": {
+                "sizeX": 7,
+                "sizeY": 4,
+                "row": 4,
+                "col": 6
+              },
+              "ee5042c3-6f0c-0e06-e48e-3ce3c2ec564e": {
+                "sizeX": 7,
+                "sizeY": 2,
+                "row": 8,
+                "col": 6
+              },
+              "bfbb22ef-d6ad-91a7-2437-de8a25e78a33": {
+                "sizeX": 11,
+                "sizeY": 7,
+                "mobileHeight": null,
+                "row": 3,
+                "col": 13
+              },
+              "a344bb09-0db6-478d-026a-908cb5d3031b": {
+                "sizeX": 7,
+                "sizeY": 3,
+                "row": 0,
+                "col": 17
+              },
+              "1ac6f0dd-a5ff-2c12-b29b-0402ca4279d2": {
+                "sizeX": 4,
+                "sizeY": 3,
+                "row": 0,
+                "col": 13
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 17,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 90,
+              "backgroundImageUrl": null
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "f84737d1-4fb4-3237-aeaf-d2329f02d395": {
+        "id": "f84737d1-4fb4-3237-aeaf-d2329f02d395",
+        "alias": "ESP8266 Demo Device",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "9e3c7010-782a-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "bc1588be-9345-fbf9-4b19-618fa60184a3": {
+        "id": "bc1588be-9345-fbf9-4b19-618fa60184a3",
+        "alias": "Battery Monitoring",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "fb83f0c0-7859-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "4e7e38c8-8f64-6ca0-17a7-2596f30d5830": {
+        "id": "4e7e38c8-8f64-6ca0-17a7-2596f30d5830",
+        "alias": "Solar Output",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "579b22e0-7849-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "3153ecd0-727c-9827-82e2-22bf49eb4af7": {
+        "id": "3153ecd0-727c-9827-82e2-22bf49eb4af7",
+        "alias": "Battery Monitoring1",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "fb83f0c0-7859-11e7-a827-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Battery Monitoring"
+}

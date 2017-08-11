@@ -1,0 +1,499 @@
+{
+  "title": "Energy Management",
+  "configuration": {
+    "widgets": {
+      "e0711693-e0ab-8693-d076-3fbec5bf8f59": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "gauge_justgage",
+        "type": "latest",
+        "title": "Gauge - justGage",
+        "sizeX": 8,
+        "sizeY": 4,
+        "row": 0,
+        "col": 1,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "self_consumption",
+                  "label": "Now",
+                  "type": "timeseries",
+                  "color": "#ff5722",
+                  "settings": {},
+                  "_hash": 0.7407138888210016
+                }
+              ],
+              "entityAliasId": "821bd82a-7049-ec1a-a465-ed22cb57c411"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "maxValue": 100,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#999999"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 16,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#666666"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 10,
+            "gaugeColor": "#eeeeee",
+            "showTitle": true,
+            "gaugeType": "arc",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear",
+            "roundedLineCap": true,
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss"
+          },
+          "title": "% Self Consumption",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#ff5722"
+          },
+          "units": "%",
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "e0711693-e0ab-8693-d076-3fbec5bf8f59"
+      },
+      "7cc2fdce-d516-fa68-137c-6865136827f5": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "pie",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 9,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "exported",
+                  "type": "timeseries",
+                  "label": "Export",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.8844447950534962
+                },
+                {
+                  "name": "direc_consumption",
+                  "type": "timeseries",
+                  "label": "Direct Consumption",
+                  "color": "#ff5722",
+                  "settings": {},
+                  "_hash": 0.7158628322017928
+                },
+                {
+                  "name": "self_stored",
+                  "type": "timeseries",
+                  "label": "Self Stored Consumption",
+                  "color": "#eeff41",
+                  "settings": {},
+                  "_hash": 0.2683236821858459
+                }
+              ],
+              "entityAliasId": "821bd82a-7049-ec1a-a465-ed22cb57c411"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "15px",
+          "settings": {
+            "radius": 1,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "innerRadius": 0,
+            "showLabels": true,
+            "stroke": {
+              "width": 0,
+              "color": "rgba(255, 254, 254, 0)"
+            },
+            "tilt": 1,
+            "animatedPie": true
+          },
+          "title": "Solar power usage split,  Kwh",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "marginBottom": "20px"
+          },
+          "units": "%",
+          "decimals": 3,
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "widgetStyle": {},
+          "actions": {},
+          "legendConfig": {
+            "position": "right",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          }
+        },
+        "row": 0,
+        "col": 9,
+        "id": "7cc2fdce-d516-fa68-137c-6865136827f5"
+      },
+      "b7300474-92de-36ad-1964-2da0a88ee757": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy_used",
+                  "type": "timeseries",
+                  "label": "locally",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.5680269498324597
+                }
+              ],
+              "entityAliasId": "821bd82a-7049-ec1a-a465-ed22cb57c411"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "hsl(207, 90%, 54%)",
+          "color": "#ffffff",
+          "padding": "12px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "Energy Used",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600
+          },
+          "units": "KWh",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 4,
+        "col": 1,
+        "id": "b7300474-92de-36ad-1964-2da0a88ee757"
+      },
+      "57f67e86-a19c-b8a4-3a6a-449e1a9677ba": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "gauge_justgage",
+        "type": "latest",
+        "title": "Gauge - justGage",
+        "sizeX": 8,
+        "sizeY": 3,
+        "row": 5,
+        "col": 1,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "energy_independence",
+                  "type": "timeseries",
+                  "label": "Target Vs Actual",
+                  "color": "#8cd42c",
+                  "settings": {},
+                  "_hash": 0.9708988080211831
+                }
+              ],
+              "entityAliasId": "821bd82a-7049-ec1a-a465-ed22cb57c411"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "maxValue": 100,
+            "minValue": 0,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#999999"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 16,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#666666"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 4,
+            "gaugeColor": "#eeeeee",
+            "showTitle": true,
+            "gaugeType": "horizontalBar",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear",
+            "roundedLineCap": true,
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss"
+          },
+          "title": "Energy Independence",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#8CD42C"
+          },
+          "units": "%",
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "57f67e86-a19c-b8a4-3a6a-449e1a9677ba"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 18,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1501775194478,
+          "endTimeMs": 1501861594478
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Energy Management",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "e0711693-e0ab-8693-d076-3fbec5bf8f59": {
+                "sizeX": 8,
+                "sizeY": 4,
+                "row": 0,
+                "col": 6
+              },
+              "7cc2fdce-d516-fa68-137c-6865136827f5": {
+                "sizeX": 10,
+                "sizeY": 9,
+                "row": 0,
+                "col": 14
+              },
+              "b7300474-92de-36ad-1964-2da0a88ee757": {
+                "sizeX": 8,
+                "sizeY": 2,
+                "row": 7,
+                "col": 6
+              },
+              "57f67e86-a19c-b8a4-3a6a-449e1a9677ba": {
+                "sizeX": 8,
+                "sizeY": 3,
+                "row": 4,
+                "col": 6
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 18,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "821bd82a-7049-ec1a-a465-ed22cb57c411": {
+        "id": "821bd82a-7049-ec1a-a465-ed22cb57c411",
+        "alias": "Energy Management",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "387eb450-7928-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "cbc69281-0884-ddde-dd30-6876dc608a08": {
+        "id": "cbc69281-0884-ddde-dd30-6876dc608a08",
+        "alias": "Battery Monitoring",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "fb83f0c0-7859-11e7-a827-c7f326cba909"
+          ]
+        }
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Energy Management"
+}

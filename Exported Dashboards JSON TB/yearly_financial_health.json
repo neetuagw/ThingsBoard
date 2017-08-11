@@ -1,0 +1,423 @@
+{
+  "title": "Yearly financial health",
+  "configuration": {
+    "widgets": {
+      "6d26244d-268f-f914-5aa1-155cbf37f5ec": {
+        "isSystemType": true,
+        "bundleAlias": "analogue_gauges",
+        "typeAlias": "radial_gauge_canvas_gauges",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "target_vs_actual",
+                  "type": "timeseries",
+                  "label": "target_vs_actual",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.788086471578368
+                }
+              ],
+              "entityAliasId": "9fee3725-0dd8-228c-00f4-ca4dbc7fba6f"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "15px",
+          "settings": {
+            "maxValue": 100,
+            "startAngle": 45,
+            "ticksAngle": 270,
+            "showBorder": false,
+            "defaultColor": "#2196f3",
+            "needleCircleSize": 10,
+            "highlights": [],
+            "showUnitTitle": false,
+            "colorPlate": "#fff",
+            "colorMajorTicks": "#444",
+            "colorMinorTicks": "#666",
+            "minorTicks": 10,
+            "valueInt": 2,
+            "highlightsWidth": 15,
+            "valueBox": false,
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "cycle",
+            "colorNeedleShadowUp": "rgba(2, 255, 255, 0)",
+            "numbersFont": {
+              "family": "Roboto",
+              "size": 18,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "titleFont": {
+              "family": "Roboto",
+              "size": 24,
+              "style": "normal",
+              "weight": "500",
+              "color": "#888"
+            },
+            "unitsFont": {
+              "family": "Roboto",
+              "size": 22,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "valueFont": {
+              "family": "Segment7Standard",
+              "size": 36,
+              "style": "normal",
+              "weight": "normal",
+              "shadowColor": "rgba(0, 0, 0, 0.49)",
+              "color": "#444"
+            },
+            "minValue": 0,
+            "colorNeedleShadowDown": "rgba(188,143,143,0.45)",
+            "colorValueBoxRect": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxRectEnd": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxBackground": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxShadow": "rgba(0,0,0,1)"
+          },
+          "title": "Net Income Target Vs Actual",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#2196f3"
+          },
+          "widgetStyle": {},
+          "units": "95%",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "6d26244d-268f-f914-5aa1-155cbf37f5ec"
+      },
+      "2e15ade4-4d69-d0d9-5e15-ac750d392ad7": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "net_income",
+                  "type": "timeseries",
+                  "label": "Net Income achieved (£)",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.24922597183323125
+                }
+              ],
+              "entityAliasId": "9fee3725-0dd8-228c-00f4-ca4dbc7fba6f"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "#2196f3",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true
+          },
+          "title": "Net Income",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {
+            "fontSize": "12px"
+          },
+          "actions": {}
+        },
+        "id": "2e15ade4-4d69-d0d9-5e15-ac750d392ad7"
+      },
+      "9e040194-8440-d10e-65b1-a2095fde04fa": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 10,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>\n<div>\n    <a href=\"https://plot.ly/~neetuagwgmail/54/?share_key=X1SnASJLjMmu31eymjAPqa\" target=\"_blank\" title=\"Yearly financial\" style=\"display: block; text-align: center;\"><img src=\"https://plot.ly/~neetuagwgmail/54.png?share_key=X1SnASJLjMmu31eymjAPqa\" alt=\"Yearly financial\" style=\"max-width: 100%;width: 600px;\"  width=\"600\" onerror=\"this.onerror=null;this.src='https://plot.ly/404.png';\" /></a>\n    <script data-plotly=\"neetuagwgmail:54\" sharekey-plotly=\"X1SnASJLjMmu31eymjAPqa\" src=\"https://plot.ly/embed.js\" async></script>\n</div>\n\n</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    display: flex;\n}"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "9e040194-8440-d10e-65b1-a2095fde04fa"
+      },
+      "9510875b-5540-246e-da12-6e24ba172dc2": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "savings",
+                  "type": "timeseries",
+                  "label": "Savings",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.03227889583226018
+                },
+                {
+                  "name": "income",
+                  "type": "timeseries",
+                  "label": "Income",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.9536405254966545
+                }
+              ],
+              "entityAliasId": "9fee3725-0dd8-228c-00f4-ca4dbc7fba6f"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 60000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#2196f3",
+          "color": "#ffffff",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true
+          },
+          "title": "Saving vs Income",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "9510875b-5540-246e-da12-6e24ba172dc2"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 17,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a class=\"current\" href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Yearly financial health",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "6d26244d-268f-f914-5aa1-155cbf37f5ec": {
+                "sizeX": 7,
+                "sizeY": 4,
+                "row": 0,
+                "col": 6
+              },
+              "2e15ade4-4d69-d0d9-5e15-ac750d392ad7": {
+                "sizeX": 7,
+                "sizeY": 3,
+                "row": 4,
+                "col": 6
+              },
+              "9e040194-8440-d10e-65b1-a2095fde04fa": {
+                "sizeX": 11,
+                "sizeY": 10,
+                "row": 0,
+                "col": 13
+              },
+              "9510875b-5540-246e-da12-6e24ba172dc2": {
+                "sizeX": 7,
+                "sizeY": 3,
+                "row": 7,
+                "col": 6
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 17,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "9fee3725-0dd8-228c-00f4-ca4dbc7fba6f": {
+        "id": "9fee3725-0dd8-228c-00f4-ca4dbc7fba6f",
+        "alias": "Yearly Financial Health",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "9e387870-782a-11e7-a827-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "483f5610-baf6-9119-4f98-f7610cb03212": {
+        "id": "483f5610-baf6-9119-4f98-f7610cb03212",
+        "alias": "Energy Trading",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "9e3bfae0-782a-11e7-a827-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "timewindow": {
+      "history": {
+        "interval": 7200000,
+        "timewindowMs": 2592000000
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Yearly financial health"
+}

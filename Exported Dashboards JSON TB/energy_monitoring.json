@@ -1,0 +1,501 @@
+{
+  "title": "Energy Monitoring",
+  "configuration": {
+    "widgets": {
+      "3000cab6-cdf2-8848-ba1e-b7c0cf00c112": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "consumption_day",
+                  "type": "timeseries",
+                  "label": "Day KWh",
+                  "color": "#f44336",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.19369605240114263
+                },
+                {
+                  "name": "consumption_month",
+                  "type": "timeseries",
+                  "label": "Month KWh",
+                  "color": "#ffc107",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.5152384854659924
+                }
+              ],
+              "entityAliasId": "ea4ef6af-0aee-2a3e-af33-78ddc1795653"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#2196f3",
+          "color": "#ffffff",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": false
+          },
+          "title": "Building Energy Consumption",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {
+            "headerButton": [
+              {
+                "id": "eac62597-07ee-a9b1-554f-454b018599e4",
+                "name": "Battery Monitoring",
+                "icon": "pie_chart",
+                "type": "openDashboard",
+                "targetDashboardId": "23963170-784d-11e7-a827-c7f326cba909",
+                "targetDashboardStateId": "default",
+                "setEntityId": true
+              }
+            ]
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "3000cab6-cdf2-8848-ba1e-b7c0cf00c112"
+      },
+      "92141379-c946-a278-eae0-566053856dee": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "Timeseries Bars - Flot",
+        "sizeX": 11,
+        "sizeY": 7,
+        "row": 0,
+        "col": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "pv",
+                  "label": "PV",
+                  "type": "timeseries",
+                  "color": "#8cd42c",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.7258800403638492
+                }
+              ],
+              "entityAliasId": "c46d3d0b-35c6-ede1-77e9-748dd5ee9a5d"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            },
+            "aggregation": {
+              "limit": 200,
+              "type": "AVG"
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Time of a day"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": true,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": true,
+            "tooltipIndividual": true,
+            "smoothLines": true
+          },
+          "title": "Solar PV output,  KW",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600
+          },
+          "mobileHeight": null,
+          "units": "KW",
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": false,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": true
+          },
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "92141379-c946-a278-eae0-566053856dee"
+      },
+      "6ee9edb0-9b47-03c7-f38c-83e26d4643e1": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "max_demand_day",
+                  "type": "timeseries",
+                  "label": "Day KW",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.9794250107498892
+                },
+                {
+                  "name": "max_demand_month",
+                  "type": "timeseries",
+                  "label": "Month KW",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.14581361294434347
+                }
+              ],
+              "entityAliasId": "ea4ef6af-0aee-2a3e-af33-78ddc1795653"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "#2196f3",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": false
+          },
+          "title": "Maximum Demand Monitoring",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": true,
+            "showTotal": false
+          },
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 4,
+        "col": 0,
+        "id": "6ee9edb0-9b47-03c7-f38c-83e26d4643e1"
+      },
+      "a344bb09-0db6-478d-026a-908cb5d3031b": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ffffff",
+          "color": "#455a64",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: normal;\n    font-size: 22px;\n    color: #455a64;\n    width: 100%;\n    height: 100%;\n    overflow-y:scroll;\n}\n\n.notification_div{\n\tfloat:left;\n    border-bottom:1px solid #b0bec5;\n    height:45px;\n    display: flex;\n    align-items: center;\n    font-size: 16px;\n    padding-bottom: 10px;\n}\n\n.text{\n\tborder-right:1px dashed #b0bec5;\n\twidth:70%;\n    justify-content: left;\n    padding-left:20px\n}\n\n.icon{\n\twidth:20%;\n    justify-content: center;\n}",
+            "cardHtml": "<div class='card'>\r\n  \r\n  <div class=\"1\">\r\n<div class=\"notification_div text\">July- Demand reduction target reached achieved</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"2\">\r\n<div class=\"notification_div text\">Energy monitoring sensor 24 is output-null</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/0KZduYz.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"3\">\r\n<div class=\"notification_div text\">Import capacity agreement breahced </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/SII1f0G.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"4\">\r\n<div class=\"notification_div text\">July- load shifting target achieved  </div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"5\">\r\n<div class=\"notification_div text\">July baseload reduction target not achieved</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/OFe0BxI.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n<div class=\"6\">\r\n<div class=\"notification_div text\">Export limit breached for 1 second on 22Nd july at 05:21pm</div><div class=\"notification_div icon\"><img src=\"http://i.imgur.com/0KZduYz.png\" alt=\"\" height=\"40\" width=\"40\"></div>\r\n</div>\r\n    \r\n</div>"
+          },
+          "title": "Capacity Factor",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 7,
+        "col": 8,
+        "id": "a344bb09-0db6-478d-026a-908cb5d3031b"
+      },
+      "9571c5c1-fc24-b584-a73d-0b9a08085248": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#8cd42c",
+          "color": "#ffffff",
+          "padding": "8px",
+          "settings": {
+            "cardCss": ".card {\n    font-weight: normal;\n    font-size: 22px;\n    color: #ffffff;\n    width: 100%;\n    height: 100%;\n    padding-top:20px;\n    padding-left: 8px;\n}",
+            "cardHtml": "<div class='card'>\n    \n    <div>\n        <div style=\"margin-bottom:20px\">\n            <span style=\"margin-right:30px\">Total</span><span>12%</span>\n        </div>\n        <div >\n            <span style=\"margin-right:30px\">This year</span><span>10.1%</span>\n        </div>\n    </div>\n    \n</div>"
+          },
+          "title": "Capacity Factor",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "row": 7,
+        "col": 17,
+        "id": "9571c5c1-fc24-b584-a73d-0b9a08085248"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 21,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n    <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "timewindow": {
+      "realtime": {
+        "interval": 1800000,
+        "timewindowMs": 18000000
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Energy Monitoring",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "3000cab6-cdf2-8848-ba1e-b7c0cf00c112": {
+                "sizeX": 7,
+                "sizeY": 5,
+                "row": 0,
+                "col": 6
+              },
+              "92141379-c946-a278-eae0-566053856dee": {
+                "sizeX": 11,
+                "sizeY": 7,
+                "row": 0,
+                "col": 13,
+                "mobileHeight": null
+              },
+              "6ee9edb0-9b47-03c7-f38c-83e26d4643e1": {
+                "sizeX": 7,
+                "sizeY": 5,
+                "row": 5,
+                "col": 6
+              },
+              "a344bb09-0db6-478d-026a-908cb5d3031b": {
+                "sizeX": 7,
+                "sizeY": 3,
+                "row": 7,
+                "col": 17
+              },
+              "9571c5c1-fc24-b584-a73d-0b9a08085248": {
+                "sizeX": 4,
+                "sizeY": 3,
+                "row": 7,
+                "col": 13
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 21,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 90,
+              "backgroundImageUrl": null
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "ea4ef6af-0aee-2a3e-af33-78ddc1795653": {
+        "id": "ea4ef6af-0aee-2a3e-af33-78ddc1795653",
+        "alias": "Building Energy Consumption",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "7292b1c0-782c-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "07e00eca-a39e-2052-3c7f-e591b83405b3": {
+        "id": "07e00eca-a39e-2052-3c7f-e591b83405b3",
+        "alias": "ESP8266 Demo Device",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "9e3c7010-782a-11e7-a827-c7f326cba909"
+          ]
+        }
+      },
+      "c46d3d0b-35c6-ede1-77e9-748dd5ee9a5d": {
+        "id": "c46d3d0b-35c6-ede1-77e9-748dd5ee9a5d",
+        "alias": "Solar Output",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "579b22e0-7849-11e7-a827-c7f326cba909"
+          ]
+        }
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Energy Monitoring"
+}

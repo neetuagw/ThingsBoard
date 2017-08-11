@@ -1,0 +1,557 @@
+{
+  "title": "Ancillary Services",
+  "configuration": {
+    "widgets": {
+      "da74fa79-34b5-1498-8742-f1753d4bb1d1": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "Timeseries table",
+        "sizeX": 8,
+        "sizeY": 3,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "4d87ef39-ab47-12e8-9c0d-ce9692c141c8",
+              "dataKeys": [
+                {
+                  "name": "capacity_market",
+                  "label": "Capacity",
+                  "type": "timeseries",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.7046152531642083
+                },
+                {
+                  "name": "FFR",
+                  "label": "FFR",
+                  "type": "timeseries",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.6175380638518253
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#2196f3",
+          "color": "#ffffff",
+          "padding": "10px",
+          "settings": {
+            "showTimestamp": true
+          },
+          "title": "Notifications of requirement",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {
+            "headerButton": []
+          }
+        },
+        "id": "da74fa79-34b5-1498-8742-f1753d4bb1d1"
+      },
+      "9c1f4c7c-d698-211d-7140-f25c52b9ed4a": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>\n    <div>Frequency Response Status</div>\n    <div style=\"margin-top:20px\"><img src=\"http://i.imgur.com/nH2tuu9.png\" alt=\"\" height=\"90\" width=\"90\"></div>\n</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 25px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n}"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "9c1f4c7c-d698-211d-7140-f25c52b9ed4a"
+      },
+      "f8513a58-ff1a-f110-905c-33f806c9e97b": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 4,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "cardHtml": "<div class='card'>\n    <div>Capacity Market Status</div>\n    <div style=\"margin-top:20px\"><img src=\"http://i.imgur.com/SII1f0G.png\" alt=\"\" height=\"90\" width=\"90\"></div>\n\n</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 25px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n}"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "f8513a58-ff1a-f110-905c-33f806c9e97b"
+      },
+      "a344bb09-0db6-478d-026a-908cb5d3031b": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 3,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "#2196f3",
+          "padding": "15px",
+          "settings": {
+            "cardHtml": "<div class='card'>\n\n    <div style=\"margin-top:20px;margin-left:20px;margin-right:20px;border-top: 0.8px dashed #1f77b4;padding-top: 10px;\">\n        <div style=\"float:left;\">\n            <div style=\"color: #2196f3\">Actual</div>\n            <div>£15</div>\n\n\n        </div>\n        <div style=\"float:right;\">\n            <div style=\"color: #2196f3\">Target</div>\n            <div>£18</div>\n\n        </div>\n    </div>\n\n</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 22px;\n    color: #ff5722;\n    width: 100%;\n    height: 100%;\n    align-items:center;\n    justify-content: center;\n    text-align: center;\n}"
+          },
+          "title": "£/MW/hr",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "titleStyle": {
+            "fontSize": "25px",
+            "fontWeight": 800,
+            "align-items": "center",
+            "justify-content": "center",
+            "text-align": "center"
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "margin": "",
+          "widgetStyle": {
+            "border": "1px solid #1F77B4"
+          },
+          "actions": {}
+        },
+        "row": 7,
+        "col": 8,
+        "id": "a344bb09-0db6-478d-026a-908cb5d3031b"
+      },
+      "4ac1a16a-24aa-0e6f-67ef-7e629638a95f": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 8,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0",
+          "settings": {
+            "cardHtml": "<div class='card'>\n\n    <div>\n    <a href=\"https://plot.ly/~neetuagwgmail/56/?share_key=ZxV7gde4aT4nnBi3JYAF9K\" target=\"_blank\" title=\"Frequency Response\" style=\"display: block; text-align: center;\"><img src=\"https://plot.ly/~neetuagwgmail/56.png?share_key=ZxV7gde4aT4nnBi3JYAF9K\" alt=\"Frequency Response\" style=\"max-width: 100%;width: 600px;\"  width=\"600\" onerror=\"this.onerror=null;this.src='https://plot.ly/404.png';\" /></a>\n    <script data-plotly=\"neetuagwgmail:56\" sharekey-plotly=\"ZxV7gde4aT4nnBi3JYAF9K\" src=\"https://plot.ly/embed.js\" async></script>\n</div>\n</div>\n    \n</div>",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+          },
+          "title": "New HTML Card",
+          "dropShadow": true,
+          "enableFullscreen": false,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "4ac1a16a-24aa-0e6f-67ef-7e629638a95f"
+      },
+      "fe4634d6-6b3f-027a-d169-485a76607b62": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 4,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "Power_output",
+                  "type": "timeseries",
+                  "label": "Power Output",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.4031562598915297
+                }
+              ],
+              "entityAliasId": "4d87ef39-ab47-12e8-9c0d-ce9692c141c8"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ff5722",
+          "color": "rgba(255, 255, 255, 0.87)",
+          "padding": "16px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "New Simple card",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "units": "KW",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "fe4634d6-6b3f-027a-d169-485a76607b62"
+      },
+      "e864cfe3-e82a-b00b-631c-2c5b0ca597af": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "hours_used",
+                  "type": "timeseries",
+                  "label": "Hours used",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9629961088899586,
+                  "units": "h"
+                }
+              ],
+              "entityAliasId": "4d87ef39-ab47-12e8-9c0d-ce9692c141c8"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ff5722",
+          "color": "rgba(255, 255, 255, 0.87)",
+          "padding": "16px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "New Simple card",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "units": "h",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "e864cfe3-e82a-b00b-631c-2c5b0ca597af"
+      },
+      "0834798b-775e-2599-5789-b3fe245f22f2": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 3,
+        "sizeY": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "hours_available",
+                  "type": "timeseries",
+                  "label": "Hours Available",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.26713351666497553,
+                  "units": "h"
+                }
+              ],
+              "entityAliasId": "4d87ef39-ab47-12e8-9c0d-ce9692c141c8"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ff5722",
+          "color": "rgba(255, 255, 255, 0.87)",
+          "padding": "16px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "New Simple card",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "units": "h",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "0834798b-775e-2599-5789-b3fe245f22f2"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 15,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Ancillary Services",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "da74fa79-34b5-1498-8742-f1753d4bb1d1": {
+                "sizeX": 8,
+                "sizeY": 3,
+                "row": 7,
+                "col": 6
+              },
+              "9c1f4c7c-d698-211d-7140-f25c52b9ed4a": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 0,
+                "col": 6
+              },
+              "f8513a58-ff1a-f110-905c-33f806c9e97b": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 0,
+                "col": 10
+              },
+              "a344bb09-0db6-478d-026a-908cb5d3031b": {
+                "sizeX": 8,
+                "sizeY": 3,
+                "row": 4,
+                "col": 6
+              },
+              "4ac1a16a-24aa-0e6f-67ef-7e629638a95f": {
+                "sizeX": 10,
+                "sizeY": 8,
+                "row": 2,
+                "col": 14
+              },
+              "fe4634d6-6b3f-027a-d169-485a76607b62": {
+                "sizeX": 4,
+                "sizeY": 2,
+                "row": 0,
+                "col": 20
+              },
+              "e864cfe3-e82a-b00b-631c-2c5b0ca597af": {
+                "sizeX": 3,
+                "sizeY": 2,
+                "row": 0,
+                "col": 17
+              },
+              "0834798b-775e-2599-5789-b3fe245f22f2": {
+                "sizeX": 3,
+                "sizeY": 2,
+                "row": 0,
+                "col": 14
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 15,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 90,
+              "backgroundImageUrl": null
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "4d87ef39-ab47-12e8-9c0d-ce9692c141c8": {
+        "id": "4d87ef39-ab47-12e8-9c0d-ce9692c141c8",
+        "alias": "Ancillary Services",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "538c7530-7b7a-11e7-835d-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1502029136332,
+          "endTimeMs": 1502115536332
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": false,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Ancillary Services"
+}

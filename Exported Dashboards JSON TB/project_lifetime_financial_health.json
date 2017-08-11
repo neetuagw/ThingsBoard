@@ -1,0 +1,382 @@
+{
+  "title": "Project lifetime Financial health",
+  "configuration": {
+    "widgets": {
+      "1b2b330d-34f4-41da-61ce-f321bfa1b53d": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "pie",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 10,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "ancillary",
+                  "type": "timeseries",
+                  "label": "Ancillary Services",
+                  "color": "#ff5722",
+                  "settings": {},
+                  "_hash": 0.9891042365814646
+                },
+                {
+                  "name": "energy_trading",
+                  "type": "timeseries",
+                  "label": "Energy Trading",
+                  "color": "#8cd42c",
+                  "settings": {},
+                  "_hash": 0.27192728261084875
+                },
+                {
+                  "name": "self_consumption",
+                  "type": "timeseries",
+                  "label": "Self Consumption",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.10101846498782985
+                }
+              ],
+              "entityAliasId": "4de219e0-6114-cac4-aa74-d315002c0490"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "20px",
+          "settings": {
+            "radius": 1,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "innerRadius": 0,
+            "showLabels": true,
+            "stroke": {
+              "width": 5
+            },
+            "tilt": 1,
+            "animatedPie": false
+          },
+          "title": "Utilisation of Battery Energy for different activities",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600
+          },
+          "widgetStyle": {},
+          "decimals": 2,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "1b2b330d-34f4-41da-61ce-f321bfa1b53d"
+      },
+      "1f8f28a0-dbbc-cc64-ca3e-74aef0370ce0": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "simple_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 8,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "payback_predictor",
+                  "type": "timeseries",
+                  "label": ".",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.9148181102904098
+                }
+              ],
+              "entityAliasId": "4de219e0-6114-cac4-aa74-d315002c0490"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#2196f3",
+          "color": "rgba(255, 255, 255, 0.87)",
+          "padding": "16px",
+          "settings": {
+            "labelPosition": "top"
+          },
+          "title": "Payback period predictor",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "25px",
+            "fontWeight": 600
+          },
+          "units": "years",
+          "decimals": 2,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "1f8f28a0-dbbc-cc64-ca3e-74aef0370ce0"
+      },
+      "e0711693-e0ab-8693-d076-3fbec5bf8f59": {
+        "isSystemType": true,
+        "bundleAlias": "digital_gauges",
+        "typeAlias": "gauge_justgage",
+        "type": "latest",
+        "title": "Gauge - justGage",
+        "sizeX": 8,
+        "sizeY": 4,
+        "row": 0,
+        "col": 1,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "irr",
+                  "type": "timeseries",
+                  "label": "IRR",
+                  "color": "#ff5722",
+                  "settings": {},
+                  "_hash": 0.23764950646137462
+                }
+              ],
+              "entityAliasId": "4de219e0-6114-cac4-aa74-d315002c0490"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#ffffff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "maxValue": 20,
+            "minValue": 5,
+            "donutStartAngle": 90,
+            "showValue": true,
+            "showMinMax": true,
+            "gaugeWidthScale": 0.75,
+            "levelColors": [],
+            "titleFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#999999"
+            },
+            "labelFont": {
+              "family": "Roboto",
+              "size": 8,
+              "style": "normal",
+              "weight": "500"
+            },
+            "valueFont": {
+              "family": "Roboto",
+              "style": "normal",
+              "weight": "500",
+              "size": 16,
+              "color": "#666666"
+            },
+            "minMaxFont": {
+              "family": "Roboto",
+              "size": 12,
+              "style": "normal",
+              "weight": "500",
+              "color": "#666666"
+            },
+            "neonGlowBrightness": 0,
+            "dashThickness": 10,
+            "gaugeColor": "#eeeeee",
+            "showTitle": true,
+            "gaugeType": "arc",
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "linear",
+            "roundedLineCap": true,
+            "timestampFormat": "yyyy-MM-dd HH:mm:ss"
+          },
+          "title": "% Self Consumption",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#ff5722"
+          },
+          "units": "%",
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "e0711693-e0ab-8693-d076-3fbec5bf8f59"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 13,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/3a18c800-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Project lifetime Financial health",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "1b2b330d-34f4-41da-61ce-f321bfa1b53d": {
+                "sizeX": 10,
+                "sizeY": 8,
+                "row": 0,
+                "col": 14
+              },
+              "1f8f28a0-dbbc-cc64-ca3e-74aef0370ce0": {
+                "sizeX": 8,
+                "sizeY": 4,
+                "row": 4,
+                "col": 6
+              },
+              "e0711693-e0ab-8693-d076-3fbec5bf8f59": {
+                "sizeX": 8,
+                "sizeY": 4,
+                "row": 0,
+                "col": 6
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 13,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 90,
+              "backgroundImageUrl": null
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "4de219e0-6114-cac4-aa74-d315002c0490": {
+        "id": "4de219e0-6114-cac4-aa74-d315002c0490",
+        "alias": "Project lifetime financial",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "9e37dc30-782a-11e7-a827-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      },
+      "da5e47ce-1014-46da-dc41-c3f057b0e4b9": {
+        "id": "da5e47ce-1014-46da-dc41-c3f057b0e4b9",
+        "alias": "Energy Management",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "387eb450-7928-11e7-a827-c7f326cba909"
+          ]
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1502116471626,
+          "endTimeMs": 1502202871626
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Project lifetime Financial health"
+}

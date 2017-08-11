@@ -1,0 +1,528 @@
+{
+  "title": "Energy Trading",
+  "configuration": {
+    "widgets": {
+      "1de28fdf-6df2-ab0f-e23e-be4c0d1c3a55": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "gross_income",
+                  "type": "timeseries",
+                  "label": "Gross Income",
+                  "color": "#ff5722",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisTickDecimals": 0,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.05442659933083771
+                }
+              ],
+              "entityAliasId": "10c394c3-ed57-61f6-5a0d-85b55157bc16"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "net_income",
+                  "type": "timeseries",
+                  "label": "Net Income",
+                  "color": "#8cd42c",
+                  "settings": {
+                    "showLines": false,
+                    "fillLines": false,
+                    "showPoints": false,
+                    "showSeparateAxis": false,
+                    "axisTickDecimals": 0,
+                    "axisPosition": "left"
+                  },
+                  "_hash": 0.6033247792455907
+                }
+              ],
+              "entityAliasId": "10c394c3-ed57-61f6-5a0d-85b55157bc16"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 86400000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "fontColor": "#545454",
+            "fontSize": 12,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "grid": {
+              "color": "rgba(208, 217, 221, 0)",
+              "tickColor": "#DDDDDD",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 1
+            },
+            "stack": false,
+            "tooltipIndividual": true,
+            "shadowSize": 8,
+            "smoothLines": true
+          },
+          "title": "Daily Average energy sold   Kwh",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "22px",
+            "fontWeight": 600,
+            "color": "#ff5722"
+          },
+          "mobileHeight": null,
+          "widgetStyle": {},
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false
+          },
+          "actions": {}
+        },
+        "id": "1de28fdf-6df2-ab0f-e23e-be4c0d1c3a55"
+      },
+      "2e15ade4-4d69-d0d9-5e15-ac750d392ad7": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 3,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "avg_daily_energy",
+                  "type": "timeseries",
+                  "label": "Average daily energy",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.8101247401513856,
+                  "units": "KWh"
+                },
+                {
+                  "name": "avg_price",
+                  "type": "timeseries",
+                  "label": "Average price (£)",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.7027250705660817
+                },
+                {
+                  "name": "high",
+                  "type": "timeseries",
+                  "label": "High (£)",
+                  "color": "#f44336",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.1589433298886811,
+                  "units": "",
+                  "decimals": 2
+                },
+                {
+                  "name": "low",
+                  "type": "timeseries",
+                  "label": "Low (£)",
+                  "color": "#ffc107",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.9093903931094514,
+                  "units": "",
+                  "decimals": 2
+                }
+              ],
+              "entityAliasId": "10c394c3-ed57-61f6-5a0d-85b55157bc16"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#ffffff",
+          "color": "#2196f3",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true
+          },
+          "title": "New Timeseries table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {
+            "fontSize": "12px"
+          },
+          "actions": {}
+        },
+        "id": "2e15ade4-4d69-d0d9-5e15-ac750d392ad7"
+      },
+      "6d26244d-268f-f914-5aa1-155cbf37f5ec": {
+        "isSystemType": true,
+        "bundleAlias": "analogue_gauges",
+        "typeAlias": "radial_gauge_canvas_gauges",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 6,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "forcast_actual",
+                  "type": "timeseries",
+                  "label": "forcast_actual",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.5392163273847925
+                }
+              ],
+              "entityAliasId": "10c394c3-ed57-61f6-5a0d-85b55157bc16"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "20px",
+          "settings": {
+            "maxValue": 100,
+            "startAngle": 45,
+            "ticksAngle": 270,
+            "showBorder": false,
+            "defaultColor": "#2196f3",
+            "needleCircleSize": 10,
+            "highlights": [],
+            "showUnitTitle": false,
+            "colorPlate": "#fff",
+            "colorMajorTicks": "#444",
+            "colorMinorTicks": "#666",
+            "minorTicks": 10,
+            "valueInt": 2,
+            "highlightsWidth": 15,
+            "valueBox": false,
+            "animation": true,
+            "animationDuration": 500,
+            "animationRule": "cycle",
+            "colorNeedleShadowUp": "rgba(2, 255, 255, 0)",
+            "numbersFont": {
+              "family": "Roboto",
+              "size": 18,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "titleFont": {
+              "family": "Roboto",
+              "size": 24,
+              "style": "normal",
+              "weight": "500",
+              "color": "#888"
+            },
+            "unitsFont": {
+              "family": "Roboto",
+              "size": 22,
+              "style": "normal",
+              "weight": "500",
+              "color": "#616161"
+            },
+            "valueFont": {
+              "family": "Segment7Standard",
+              "size": 36,
+              "style": "normal",
+              "weight": "normal",
+              "shadowColor": "rgba(0, 0, 0, 0.49)",
+              "color": "#444"
+            },
+            "minValue": 0,
+            "colorNeedleShadowDown": "rgba(188,143,143,0.45)",
+            "colorValueBoxRect": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxRectEnd": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxBackground": "rgba(136, 136, 136, 0.02)",
+            "colorValueBoxShadow": "rgba(0,0,0,1)"
+          },
+          "title": "Forcats Vs Actual Revenue",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "22px",
+            "fontWeight": 600,
+            "color": "#2196f3"
+          },
+          "widgetStyle": {},
+          "units": "95%",
+          "decimals": 0,
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "6d26244d-268f-f914-5aa1-155cbf37f5ec"
+      },
+      "d5071c4e-829c-c889-60b3-5bcfafb62aec": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 7,
+        "sizeY": 5,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "income",
+                  "type": "timeseries",
+                  "label": "income",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "cellStyleFunction": "",
+                    "useCellContentFunction": false,
+                    "cellContentFunction": ""
+                  },
+                  "_hash": 0.4637952700742871
+                }
+              ],
+              "entityAliasId": "10c394c3-ed57-61f6-5a0d-85b55157bc16"
+            }
+          ],
+          "timewindow": {
+            "history": {
+              "interval": 7200000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#2094f3",
+          "color": "#ffffff",
+          "padding": "10px",
+          "settings": {
+            "showTimestamp": true
+          },
+          "title": "Income from Energy Trading",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "d5071c4e-829c-c889-60b3-5bcfafb62aec"
+      },
+      "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_card",
+        "type": "static",
+        "title": "New widget",
+        "sizeX": 5,
+        "sizeY": 18,
+        "config": {
+          "datasources": [],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "#1a1a1a",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<!DOCTYPE html>\n<html>\n<head>\n    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"\n      rel=\"stylesheet\">\n</head>\n<body>\n<div id=\"mySidenav\" class=\"sidenav\">\n    <a style=\"background:#fff;margin-bottom:15px\" href=\"\"><img src=\"http://i.imgur.com/NGBJCkV.png\" width=\"250\" ></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/41b95c80-7dbc-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">home</i> <span>Home</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/f2c72100-782c-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">lightbulb_outline</i> <span>Energy Monitoring </span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/23963170-784d-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">battery_charging_full</i><span>Battery Monitoring</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/babc6ba0-7929-11e7-a827-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">perm_data_setting</i><span>Energy Management</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/1d83e300-7b67-11e7-b37d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">multiline_chart</i><span>Ancillary Services</span></a>\n  <a class=\"current\" href=\"#\"><i class=\"material-icons\">import_export</i><span>Energy Trading</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/d8c20950-7c37-11e7-835d-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Yearly Financial Health</span></a>\n  <a href=\"https://demo.thingsboard.io/dashboards/b098fa60-7c46-11e7-adf8-c7f326cba909?publicId=74712c90-786a-11e7-a827-c7f326cba909\"><i class=\"material-icons\">attach_money</i><span>Project Lifetime Financial Health</span></a>\n</div>\n\n</body>\n</html> ",
+            "cardCss": ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    align-items: center;\n    justify-content: center;\n    transition: background-color .5s;\n}\n.sidenav {\n    height: 100%;\n    width:100%;\n    background-color: #305680;\n    transition: 0.5s;\n}\n\n.sidenav a {\n    padding: 12px 5px 12px 12px;\n    text-decoration: none;\n    font-size: 20px;\n    color: #fff;\n    display: block;\n    transition: 0.3s;\n    justify-content: center;\n}\n\n.sidenav i {\n    vertical-align: bottom;\n}\n\n.sidenav span{\n    margin-left:7px;\n}\n\n.current{\n    background-color: #477db9;\n    color: #a1ef35 !important;\n    font-weight:bold;\n}\n\n.sidenav a:hover, .offcanvas a:focus{\n    background-color: #477db9;\n    color: #8BD42B;\n}\n\n"
+          },
+          "title": "New HTML Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "box-shadow": "10px 10px 5px #ccc"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Energy Trading",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "1de28fdf-6df2-ab0f-e23e-be4c0d1c3a55": {
+                "sizeX": 11,
+                "sizeY": 8,
+                "mobileHeight": null,
+                "row": 3,
+                "col": 13
+              },
+              "2e15ade4-4d69-d0d9-5e15-ac750d392ad7": {
+                "sizeX": 11,
+                "sizeY": 3,
+                "row": 0,
+                "col": 13
+              },
+              "6d26244d-268f-f914-5aa1-155cbf37f5ec": {
+                "sizeX": 7,
+                "sizeY": 6,
+                "row": 0,
+                "col": 6
+              },
+              "d5071c4e-829c-c889-60b3-5bcfafb62aec": {
+                "sizeX": 7,
+                "sizeY": 5,
+                "row": 6,
+                "col": 6
+              },
+              "c01fac7f-d9c5-7ff6-e7ef-9bf12530e1c9": {
+                "sizeX": 5,
+                "sizeY": 18,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "10c394c3-ed57-61f6-5a0d-85b55157bc16": {
+        "id": "10c394c3-ed57-61f6-5a0d-85b55157bc16",
+        "alias": "Energy Trading",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "9e3bfae0-782a-11e7-a827-c7f326cba909"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1502098493604,
+          "endTimeMs": 1502184893604
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": false,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": false,
+      "titleColor": "rgba(0,0,0,0.870588)"
+    }
+  },
+  "name": "Energy Trading"
+}
